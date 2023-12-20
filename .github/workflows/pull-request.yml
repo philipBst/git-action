@@ -10,3 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This workflow runs on pull requests."
+
+      - name: echo secret
+        run: echo "secret ${{ secrets.FIRST_GITHUB_SECRET }}"
