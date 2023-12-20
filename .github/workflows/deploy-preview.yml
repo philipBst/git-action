@@ -1,9 +1,7 @@
 name: "Netlify Previews"
 
 on:
-  push:
-    branches-ignore:
-      - master
+  pull_request:
 
 jobs:
   deploy:
