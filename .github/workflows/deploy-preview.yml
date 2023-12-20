@@ -22,11 +22,11 @@ jobs:
           deploy_alias: ${{ env.BRANCH_NAME }}
           build_directory: ".next"
 
-      # Creates a status check with link to preview
-      - name: Status check
-        uses: Sibz/github-status-action@v1.1.1
-        with:
-          authToken: ${{ secrets.GITHUB_TOKEN }}
-          context: Netlify preview
-          state: success
-          target_url: ${{ env.NETLIFY_PREVIEW_URL }}
+    #   # Creates a status check with link to preview
+    #   - name: Status check
+    #     uses: Sibz/github-status-action@v1.1.1
+    #     with:
+    #       authToken: ${{ secrets.GITHUB_TOKEN }}
+    #       context: Netlify preview
+    #       state: success
+    #       target_url: ${{ env.NETLIFY_PREVIEW_URL }}
